@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 import { useReducer, Dispatch } from "react";
 import { Block, BoardShape, BlockShape, SHAPES, EmptyCell } from "../types"
 
@@ -71,7 +72,7 @@ type Action = {
 };
 
 const boardReducer = (state: BoardState, action: Action):BoardState => {
-  let newState = { ...state }
+  const newState = { ...state }
 
   switch (action.type) {
     case 'start':

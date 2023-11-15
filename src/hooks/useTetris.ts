@@ -43,7 +43,7 @@ export const useTetris = () => {
           isPressingLeft,
           isPressingRight,
         });
-      }, 300)
+      }, 100)
     }
 
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -226,7 +226,7 @@ export const useTetris = () => {
       return;
     }
     gameTick()
-  }, TickSpeed.Normal)
+  }, tickSpeed)
 
 
   return {
